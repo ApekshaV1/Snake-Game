@@ -35,6 +35,8 @@ window.onload = function(){
     document.addEventListener("keyup", changeDirection);  //this will listen the arrow keys and will call the function changeDirection
     //update();
     setInterval(update, 3000/10); //100 milliseconds
+
+    
 }
 
 function update(){
@@ -88,22 +90,22 @@ function update(){
 }
 
 function changeDirection(e){
-    if(e.code == "ArrowUp" && velocityY !=1){
+    if(e.code == "ArrowUp"){
         velocityX=0;
         velocityY=-1;
 
     }
-    else if(e.code == "ArrowDown" && velocityY !=-1){
+    else if(e.code == "ArrowDown"){
         velocityX=0;
         velocityY=1;
         
     }
-    else if(e.code == "ArrowLeft" && velocityY !=1){
+    else if(e.code == "ArrowLeft"){
         velocityX=-1;
         velocityY=0;
         
     }
-    else if(e.code == "ArrowRight" && velocityY !=-1){
+    else if(e.code == "ArrowRight"){
         velocityX=1;
         velocityY=0;
         
@@ -116,3 +118,6 @@ function placefood(){
     foodY = Math.floor(Math.random()*rows)*blocksize;
 }
 
+function onClickRestart(){
+window.location.reload();
+}
