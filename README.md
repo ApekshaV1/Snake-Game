@@ -1,0 +1,1 @@
+This is a classic Snake Game built using HTML , CSS and JavaScript. The objective of the game is to control a snake to eat food and grow longer, while avoiding collisions with the walls or the snake's own body. The game ends when the snake collides with itself or a boundary.
